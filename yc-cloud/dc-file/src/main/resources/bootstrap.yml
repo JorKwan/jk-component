@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: dc-file
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://frame:123456@integrated-eureka:9931/integrated-eureka/eureka/
+#      register-with-eureka: true
+#      fetch-registry: true
+#  instance:
+#    hostname: dc-file
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#    lease-expiration-duration-in-seconds: 10
+#    lease-renewal-interval-in-seconds: 5
+#    prefer-ip-address: true
+
+persagy:
+  dc:
+    file:
+      url: http://192.168.25.129:9000/
+      accessKey: admin
+      secretKey: 12345678
+  common:
+    token:
+      enabled: false

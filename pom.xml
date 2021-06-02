@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.persagy</groupId>
+        <artifactId>yc-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>yc-parent</relativePath>
+    </parent>
+    <packaging>pom</packaging>
+    <description>数据中台</description>
+    <artifactId>jk-component</artifactId>
+
+    <modules>
+        <!--<module>dc-mybatis</module> -->
+        <module>dc-common</module>
+        <module>yc-cloud</module>
+        <module>yc-comp</module>
+        <module>yc-server</module>
+        <module>yc-parent</module>
+        <module>yc-package</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>integrated</id>
+            <name>releases Repository</name>
+            <url>http://47.93.132.139:8081/nexus/content/repositories/integrated/</url>
+        </repository>
+        <repository>
+            <id>persagy</id>
+            <name>persagy Repository</name>
+            <url>http://47.93.132.139:8081/nexus/content/repositories/persagy/</url>
+        </repository>
+    </repositories>
+</project>

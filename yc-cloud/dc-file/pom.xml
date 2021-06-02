@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>yc-cloud</artifactId>
+        <groupId>com.persagy</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>dc-file</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- 配置中心（包含注册中心） -->
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>integrated-config-client</artifactId>
+        </dependency>
+        <!-- 项目启动 -->
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>yc-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>dc-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>yc-mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>dc-file-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.persagy</groupId>
+            <artifactId>dc-amqp-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

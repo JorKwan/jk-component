@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.persagy.fm.mybatis.dao.SimpleTreeCodeDao">
+	<select id="getMaxCode" resultType="java.lang.String">
+		select max(${innerCodeField}) as code
+		from ${tableName}
+		where ${innerCodeField} like '${parentCode}_____'
+	</select>
+
+	<select id="updateSubTreeCode">
+		update ${tableName} set ${innerCodeField} = (concat('${parentCode}',substr(${innerCodeField},${oldParentCode.length()+1})))
+		where ${innerCodeField} like '${oldParentCode}%'
+	</select>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>yc-package</artifactId>
+        <groupId>com.persagy</groupId>
+        <version>1.0.0</version>
+        <relativePath>../yc-package</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.persagy</groupId>
+    <artifactId>yc-cloud</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>dc-file</module>
+        <module>dc-message</module>
+    </modules>
+</project>
